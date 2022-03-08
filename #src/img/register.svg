@@ -1,12 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="css/style.css"></head><body> <header> <div class="container"><div class="header__inner"><a class="header__logo logo" href="#"><img src="img/logo.svg" alt="logo"></a><nav class="header__nav"> <li class="header__item"> <a class="header__link" href="#"> Достоинства</a></li><li class="header__item"> <a class="header__link" href="#"> Модели</a></li><li class="header__item"> <a class="header__link" href="#"> Маршруты</a></li><li class="header__item"> <a class="header__link" href="#"> BSEMOTO.PRO </a></li></nav><button class="header__register"><span>Записаться </span><svg width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25.1291 0.718756L29.7857 5.47188C30.0714 5.76355 30.0714 6.23645 29.7857 6.52812L25.1291 11.2812C24.8434 11.5729 24.3801 11.5729 24.0943 11.2812C23.8086 10.9896 23.8086 10.5167 24.0943 10.225L27.5018 6.74688H0V5.25312H27.5018L24.0943 1.77501C23.8086 1.48333 23.8086 1.01043 24.0943 0.718756C24.3801 0.427081 24.8434 0.427081 25.1291 0.718756Z" fill="url(#paint0_linear_4_2544)"/>
-<defs>
-<linearGradient id="paint0_linear_4_2544" x1="0" y1="0.5" x2="30.7646" y2="3.40647" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BC000B"/>
-<stop offset="1" stop-color="#BD6600"/>
-</linearGradient>
-</defs>
-</svg></button></div></div></header><section class="hero"> <div class="hero__container"><div class="hero__top"> <h2 class="hero__title">Город</h2><button class="hero__register"><svg width="264" height="264" viewBox="0 0 264 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="264" height="264" viewBox="0 0 264 264" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_b_4_2677)">
 <circle cx="132" cy="132" r="110" fill="url(#paint0_radial_4_2677)" fill-opacity="0.7"/>
 </g>
@@ -80,4 +72,4 @@
 <stop offset="1" stop-color="#BD6600"/>
 </linearGradient>
 </defs>
-</svg></button></div><div class="hero__bottom"> <img class="hero__img" src="img/hero_moto.png" alt=""><h2 class="hero__title hero__title--bottom">твой</h2></div></div></section></body></html>
+</svg>
