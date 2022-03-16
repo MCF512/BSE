@@ -1,0 +1,33 @@
+section.route 
+  .container 
+    h2.route__title Маршруты
+    ul.route__cities
+      li.route__city 
+        button.active Москва
+      li.route__city 
+        button Санкт-Петербург
+      li.route__city 
+        button Нижний Новгород
+      li.route__city 
+        button Екатеринбург
+      li.route__city 
+        form.route__select(action="") 
+          select(name="cities")
+            option(value="Moscow")  Москва
+            option(value="Saint-Petersburg")  Санкт-Петербург
+            option(value="Ekaterinburg")  Екатеринбург
+            option(value="Nizhniy_Novgorod")  Нижний Новгород
+            option(value="Yaroslavl")  Ярославль
+    ul.route__slides.route__slides--moscow 
+      li.route__slide 
+        h3.route__subtitle.route__subtitle--first Москва сближает максимально
+        a.route__map(href="#") Смотреть карту
+        img.route__img(src="img/moscow_slide_1.jpg", alt="slide") 
+      li.route__slide 
+        h3.route__subtitle.route__subtitle--second Москва сближает максимально
+        a.route__map(href="#") Смотреть карту
+        img.route__img(src="img/moscow_slide_2.jpg", alt="slide") 
+      li.route__slide 
+        h3.route__subtitle.route__subtitle--third Москва сближает максимально
+        a.route__map(href="#") Смотреть карту
+        img.route__img(src="img/moscow_slide_3.jpg", alt="slide") 

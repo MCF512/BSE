@@ -42,7 +42,7 @@ let { src, dest } = require('gulp'),
   uglify = require('gulp-uglify-es').default,
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2'),
-  imagemin = require('gulp-imagemin'),
+  // imagemin = require('gulp-imagemin'),
   pug = require('gulp-pug'),
   fonter = require('gulp-fonter');
 
@@ -110,14 +110,14 @@ function js() {
 
 function images() {
   return src(path.src.img)
-    .pipe(
-      imagemin({
-        progressive: true,
-        svgoPlugins: [{ removeViewBox: false }],
-        interlaced: true,
-        optimizationLevel: 3
-      })
-    )
+    // .pipe(
+    //   imagemin({
+    //     progressive: true,
+    //     svgoPlugins: [{ removeViewBox: false }],
+    //     interlaced: true,
+    //     optimizationLevel: 3
+    //   })
+    // )
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream())
 }

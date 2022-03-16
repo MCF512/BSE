@@ -1,0 +1,167 @@
+.select {
+  background: #000;
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.select__top {
+  display: flex;
+  align-items: center;
+}
+
+.select__title {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+  max-width: 760px;
+  margin-bottom: 60px;
+}
+
+.select__filters {
+  display: flex;
+  max-width: 760px;
+}
+
+.select__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.select__filter {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 21px 40px;
+  border: 1px solid #353535;
+  border-radius: 35px;
+
+  &--active {
+    background: linear-gradient(91.98deg, #BC000B 0%, #BD6600 100%);
+  }
+}
+
+.select__subtitle {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 1.2;
+  -webkit-text-stroke: 3px rgba(188, 0, 11, 1);
+  color: transparent;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.select__list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.select__info {
+  // max-width: 341px;
+  min-width: 341px;
+  min-height: 434px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 30px;
+  display: flex;
+  align-items: end;
+  position: relative;
+  transition: box-shadow 1s;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    opacity: 0.3;
+    transition: background 1s;
+  }
+
+  &--power {
+    background-image: url(../img/power34.jpg);
+  }
+  &--volume {
+    background-image: url(../img/volume300.jpg);
+  }
+  &--carburetor {
+    background-image: url(../img/carburator34.jpg);
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 60px rgba(255, 123, 0, 0.3);
+
+    &::after {
+      background: transparent;
+    }
+  }
+}
+
+.select__text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 341px;
+  // padding-right: 20px;
+  margin-top: auto;
+  padding: 40px 30px;
+  z-index: 10;
+
+  &--right {
+    max-width: 470px;
+  }
+}
+
+.select__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select__speed {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 1.2;
+  -webkit-text-stroke: 3px rgba(188, 0, 11, 1);
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.select__parameters {
+  svg {
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-box: fill-box;
+
+    .document {
+      animation-name: no_rotation;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  }
+}
+
+.select__slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select__right {
+  background-image: url(../img/rama.jpg);
+  background-size: cover;
+  border-radius: 30px;
+}
