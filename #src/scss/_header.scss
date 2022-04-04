@@ -47,16 +47,36 @@ header {
   font-size: 24px;
   font-weight: 500;
   padding: 22px 36px;
+  transition: background 5s;
   background: linear-gradient(105.29deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   opacity: 0.7;
   box-shadow: inset 5px -5px 13px rgba(255, 255, 255, 0.11);
   filter: drop-shadow(20px 30px 100px rgba(0, 0, 0, 0.05));
   backdrop-filter: blur(20px);
   border-radius: 35px;
+ 
 
   span {
     background: linear-gradient(91.98deg, #BC000B 0%, #BD6600 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: -webkit-text-fill-color 1s;
+  }
+
+  svg {
+    transition: fill 1s;
+  }
+
+  &:hover {
+    background: linear-gradient(91.98deg, #BC000B 0%, #BD6600 100%);
+    // color: #fff;
+    span {
+      background: transparent;
+      -webkit-text-fill-color: #fff;
+    }
+
+    path {
+      fill: #fff;
+    }
   }
 }

@@ -81,6 +81,7 @@ function css() {
     )
     .pipe(group_media())
     .pipe(autoprefixer('last 5 versions'))
+    .pipe(browsersync.stream())
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -89,7 +90,7 @@ function css() {
       })
     )
     .pipe(dest(path.build.css))
-    .pipe(browsersync.stream())
+  // .pipe(browsersync.stream())
 }
 
 function js() {

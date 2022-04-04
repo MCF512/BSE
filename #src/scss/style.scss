@@ -19,6 +19,14 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  position: relative;
+  // overflow: hidden;
+
+}
+
+.body--fixed {
+  overflow: hidden;
 }
 
 .container {

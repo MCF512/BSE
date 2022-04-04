@@ -2,6 +2,7 @@
   background: #000;
   color: #fff;
   padding-bottom: 100px;
+  // position: relative;
 }
 
 .select__top {
@@ -158,10 +159,131 @@
 .select__slide {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .select__right {
   background-image: url(../img/rama.jpg);
   background-size: cover;
   border-radius: 30px;
+}
+
+.select__modal {
+  display: none;
+  position: fixed;
+  padding: 60px;
+  background: #1e1e1e;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1020px;
+  width: 100%;
+  z-index: 20;
+  border-radius: 30px;
+  overflow-y: scroll;
+  height: 800px;
+
+  &--active {
+    display: block;
+  }
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: #000;
+  //   z-index: 15;
+  // }
+
+  .modal {
+
+    &__clo {
+      position: relative;
+    }
+    
+    &__close {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: -100px;
+      top: -50px;
+      z-index: 999;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: rotate(45deg);
+        position: relative;
+        z-index: 999;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          transform: rotate(90deg) translate(0px, 50px);
+        }
+      }
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 40px;
+
+      span {
+        color: #BC000B;
+        font-weight: 500;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__block {
+      max-width: 440px;
+      width: 100%;
+    }
+
+    &__subtitle {
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(#fff, 0.1);
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgba(#fff, 0.5);
+      padding: 15px 10px;
+      border-radius: 10px;
+
+      span {
+        color: rgba(#fff, 1);
+        max-width: 210px;
+        width: 100%;
+        text-align: right;
+      }
+
+      &:nth-child(even) {
+        background: rgba(#000, 0.3);
+      }
+    }
+    
+  }
 }

@@ -32,10 +32,12 @@
 }
 
 .route__select {
+  position: relative;
+
   select {
     padding: 21px 177px 21px 68px;
     border-radius: 35px;
-  }
+  }  
 }
 
 .route__slides {
@@ -54,6 +56,7 @@
   margin-bottom: 19px;
   position: relative;
   z-index: 10;
+  min-height: 84px;
 
   &::after {
     position: absolute;
@@ -109,4 +112,42 @@
 
 .route__img {
   border-radius: 35px;
+}
+
+.route__select {
+  position: relative;
+
+  &::after {
+    content: url(../img/search.svg);
+    position: absolute;
+    left: 28px;
+    top: 50%;
+    // height: 20px;
+    transform: translateY(-45%);
+  }
+
+  &::before {
+    content: url(../img/drop-arrow.svg);
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-45%);
+  }
+
+  select {
+    background: linear-gradient(105.29deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    // opacity: 0.7;
+    box-shadow: inset 5px -5px 13px rgba(255, 255, 255, 0.11);
+    color: #fff;
+    appearance: none;   
+    
+    option {
+      background: #1E1E1E;
+      padding: 21px 28px;
+
+      &:nth-child(1) {
+        border-radius: 15px 15px 0px 0px;
+      }
+    }
+  }
 }
